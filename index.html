@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ria 21 Days Consistency Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: #fff; 
+    }
+    .pink-background {
+        background-color: transparent;
+    }
+    body {
+        background: radial-gradient(circle, #F72D93 0%, #FBB1D3 50%, #FEE3ED 100%);
+        color: #fff; 
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease-in-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .carousel {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .carousel img {
+        height: 300px; 
+        width: 20%;
+        transition: all 0.8s ease-in-out;
+        opacity: 0.8;
+        border-radius: 20px;
+        border: 2px solid palevioletred;
+    }
+
+    .carousel img.active {
+        width: 40%;
+        opacity: 1;
+    }
+</style>
+<body class="text-gray-200 p-4">
+
+    <!-- Hero Section -->
+    <div class="text-center font-bold my-12">
+        <h1 class="text-4xl mb-2">21 Days</h1>
+        <h2 class="text-3xl text-red-400">of</h2>
+        <h2 class="text-3xl text-red-500">Consistency</h2>
+        <h2 class="text-2xl text-red-600">With Ria</h2>
+        <p class="mt-4 text-lg">Build better habits, stay grounded, and grow consistency.</p>
+    </div>
+
+    <!-- Improved Image Slider -->
+    <div class="carousel">
+        <img src="/IMG-20250415-WA0013.jpg" alt="Image 1" class="active">
+        <img src="/IMG-20250415-WA0015.jpg" alt="Image 2">
+        <img src="/IMG-20250415-WA0016.jpg" alt="Image 3">
+        <img src="/IMG-20250415-WA0014.jpg" alt="Image 4">
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="container mx-auto my-7">
+        <h3 class="text-2xl text-center font-semibold mb-6">Benefits of the Program</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/time managemnet.svg" alt="Time Management" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Time Management</h4>
+                <p>Learn how to manage and maintain time effectively.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/writting-file.svg" alt="Daily Journaling" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Daily Journaling</h4>
+                <p>Document your journey and reflect on your progress as you move on.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/social-media-campaign.svg" alt="Social Content Posting" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Social Content Posting</h4>
+                <p>Develop a consistent social media engagement to make known your business and self online.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/community.svg" alt="Community Networking" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Community & Networking</h4>
+                <p>Join a community of like-minded individuals to share experience and encourage one another.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/books-14.svg" alt="Reading and Studying" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Reading & Studying</h4>
+                <p>Imporve on your reading, research, and spiritual knowledge</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md fade-in">
+                <img src="/growth-graph-increase.svg" alt="Growth" class="mx-auto w-16 h-16">
+                <h4 class="text-xl font-bold mt-4">Growth</h4>
+                <p>Experience personal growth and transformation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto text-center my-12 fade-in">
+        <h3 class="text-2xl font-semibold">Who Should Join?</h3>
+        <p class="text-lg mt-2">This challenge is perfect for:</p>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="pink-background p-6 rounded-lg shadow-md hover-effect">
+                <h4 class="text-xl font-bold mt-4">📚 Students</h4>
+                <p>Boost focus, improve study habits, and maintain academic consistency for better learning results.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md hover-effect">
+                <h4 class="text-xl font-bold mt-4">📝 Content Creators</h4>
+                <p>Strengthen creative discipline and regularly engage with audiences through structured content posting.</p>
+            </div>
+            <div class="pink-background p-6 rounded-lg shadow-md hover-effect">
+                <h4 class="text-xl font-bold mt-4">💼 Business Owners</h4>
+                <p>Develop strategic consistency for branding, marketing, and business growth.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Community Section -->
+    <div class="text-center my-12">
+        <h3 class="text-2xl font-semibold">Ready to be part of this wonderful opportunity brought to you by <span class="font-bold text-red-400"> Ria </span>?  
+        <br> Happening from <strong>May 10th - May 31st, 2025</strong>.</h3>
+        <p class="text-lg mt-2">Click the button below to be a part of it.</p>
+        <a href="https://wa.link/v7ryeb">
+            <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full mt-4 transition ease-in-out">
+                Join now 🚀
+            </button>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            let elements = document.querySelectorAll(".fade-in");
+            elements.forEach(element => {
+                let position = element.getBoundingClientRect().top;
+                if (position < window.innerHeight * 0.9) {
+                    element.classList.add("visible");
+                }
+            });
+        });
+
+        let images = document.querySelectorAll(".carousel img");
+        let index = 0;
+
+        function changeSlide() {
+            images.forEach(img => img.classList.remove("active"));
+            index = (index + 1) % images.length;
+            images[index].classList.add("active");
+        }
+
+        setInterval(changeSlide, 3000);
+    </script>
+
+</body>
+</html>
