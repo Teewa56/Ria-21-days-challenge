@@ -143,15 +143,24 @@
     </div>
 
     <script>
-        document.addEventListener("scroll", function () {
-            let elements = document.querySelectorAll(".fade-in");
-            elements.forEach(element => {
-                let position = element.getBoundingClientRect().top;
-                if (position < window.innerHeight * 0.9) {
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.innerWidth >= 768 && window.innerWidth <= 1024) { 
+                document.querySelectorAll(".fade-in").forEach(element => {
                     element.classList.add("visible");
+                });
+                } else {
+                    document.addEventListener("scroll", () => {
+                        document.querySelectorAll(".fade-in").forEach((element, index) => {
+                            if (element.getBoundingClientRect().top < window.innerHeight * 0.8) {
+                                setTimeout(() => {
+                                    element.classList.add("visible");
+                                }, index * 200);
+                            }
+                        });
+                    });
                 }
             });
-        });
+
 
         let images = document.querySelectorAll(".carousel img");
         let index = 0;
